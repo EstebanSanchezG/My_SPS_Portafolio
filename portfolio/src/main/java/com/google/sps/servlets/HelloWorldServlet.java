@@ -16,6 +16,6 @@ public class HelloWorldServlet extends HttpServlet {
     
     String[] greets = {"Hello", "Greetings", "How do you do kind stranger?", "Top of the morning to you"};
     String greet = greets[(int) (Math.random() * greets.length)];
-    response.getWriter().println("<h1>" + greet + "</h1>");
+    response.getWriter().println("<p>" + greet + "</>p");
   }
 }
