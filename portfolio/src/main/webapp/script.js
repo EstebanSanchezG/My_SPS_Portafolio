@@ -1,8 +1,8 @@
 
 async function showGreet() {
   const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  const textFromResponse = await responseFromServer.json();
 
-  const dateContainer = document.getElementById('greeting');
-  dateContainer.innerText = textFromResponse;
+  const greetContainer = document.getElementById('greeting');
+  greetContainer.innerHTML = textFromResponse;
 }
