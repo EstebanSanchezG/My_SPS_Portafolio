@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1">
     <title>Esteban | Resume</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt3UmDVlGJ4qyH9HZu8j9I_rsirPg7cn4"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/a91cfb259a.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="createMap();">
     <!-- // Intro -->
     <header id="about">
         <nav>
@@ -73,9 +74,8 @@
 
                 <!-- School details -->
                 <h3>Tec de Monterrey - Jalisco, MX.(2019-2023)</h3>
-                <h4>Software Engineer</h4>
-
                 <p>Studied B.S. in Computer Science and Software Engineer.</p>
+                <div id="map"></div>
             </div>
         </section>
     </main>
